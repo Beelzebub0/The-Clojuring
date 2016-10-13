@@ -1,5 +1,8 @@
 (ns sourcecode.core)
 
+
+-- some useful formula here--
+
 (def perg (fn [m c] (fn [x] (+ (m x) c))))
 
 (def garis1 (perg 1 3))
@@ -98,6 +101,7 @@
 (defn max'
   [x & xs]
   (reduce #(if (> %1 %2) %1 %2) x xs))
+
 
 (defn coba
   [a b c d]
